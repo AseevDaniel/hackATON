@@ -1,0 +1,112 @@
+.header { 
+    
+}
+
+.header .headerWrapper{
+    height: 100px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0 auto;
+    align-items: center;
+    max-width: min(1314px, 90vw);
+}
+
+.header__menu { 
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__logo { 
+    height: 54px;
+    cursor: pointer;
+}
+
+.header__menu_list { 
+    display: flex;
+    align-items: center;
+    margin-left: min(6vw, 80px)
+}
+
+.header__menu_item { 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    color: #171717;
+    padding: 15px 0;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.header__menu_item:not(:last-child) {
+    margin-right: min(4.5vw, 60px)
+}
+
+.header__menu_item.active, .header__menu_item:hover{
+    color: #2080C6;
+}
+
+.header__menu_item.active{
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.header__auth { 
+
+}
+
+.header__not_auth{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 24px;
+    color: #171717;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__not_auth img{
+    margin-left: 6px;
+}
+
+.header__languageSwitcher { 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 18px;
+    background: #80AAFF;
+    /* background: linear-gradient(94.43deg, rgba(124, 209, 236, 0.79) 3.45%, #3043E9 102.78%); */
+    border-radius: 18px;
+    margin-left: 48px;
+    height: 32px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: 250ms;
+}
+
+.header__languageSwitcher a img{
+    margin-left: 8px;
+    transition: 250ms;
+}
+
+.header__languageSwitcher a:first-child{
+    margin-bottom: 4px;
+}
+
+.header__languageSwitcher.active{
+    height: 60px;
+}
+
+.header__languageSwitcher.active a img{
+    rotate: -90deg;
+}

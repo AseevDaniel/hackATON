@@ -1,0 +1,40 @@
+button{
+    background: linear-gradient(94.43deg, rgba(124, 209, 236, 0.79) 3.45%, #3043E9 102.78%);
+    border-radius: 40px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 25px 45px 28px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+button.small-button{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 18px 30px 20px;
+}
+
+button:hover{
+    scale: 1.05;
+}
+button:active{
+    scale: 1;
+}
+
+.title{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 68px;
+    color: #2080C6;
+    text-align: center;
+}
