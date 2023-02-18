@@ -95,3 +95,37 @@
     margin-top: 48px;
     width: 100%;
 }
+
+
+@media (max-width: 1120px){
+    .footer .footer__menu { 
+        display: none;
+    }
+    .footer .footer__logo { 
+        display: none;
+    }
+    
+    .footer .footer__socials { 
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer__social_list { 
+        display: flex;
+    }
+    
+    .footer__social_item { 
+        height: 10vw;
+        width: 10vw;
+        border: 3px solid #FFFFFF;
+        border-radius: 1.5vw;
+    }
+
+    .footer__social_item:last-child {
+        margin-right: 0;
+    }
+
+    .footer__social_item svg{
+        height: 6vw;
+    }
+}
