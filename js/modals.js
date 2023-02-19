@@ -15,6 +15,16 @@ function onSendRequest(){
     location.reload()
 }
 
+function togglePasswordInput(inputId){
+    const passInput = document.getElementById(inputId)
+
+    if (passInput.type === "password") {
+        passInput.type = "text";
+    } else {
+        passInput.type = "password";
+    }
+}
+
 countrySelector.onload(setCountries())
 
 function setCountries(){

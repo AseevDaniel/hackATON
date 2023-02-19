@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
 
-    
     <title>Together Abroad</title>
 </head>
 <body>
@@ -32,13 +31,12 @@
                 <li class="header__menu_item"><a href="./suggest.html">Search</a></li>
             </ul>
         </menu>
-        <div onclick="toggleLoginModal()" class="header__auth">
+        <div class="header__auth">
             <div class="header__not_auth">
-                Login
-                <img src="./assets/enter-icon.svg" alt="enter">
-            </div>
-            <div class="header__mobile_auth">
-                <img src="./assets/profile-image.png" alt="profile">
+                <img class="profileImage" src="./assets/profile-image.png" alt="profile">
+                <p class="userName">User</p>
+                <div class="divider"></div>
+                <a href="./index.html"><img src="./assets/exit-icon.svg" alt="enter"></a>
             </div>
 
         </div>
@@ -59,7 +57,7 @@
             <div class="mobileMenu__auth">
                 <div class="mobileMenu__auth_user">
                     <img src="./assets/profile-image.png" alt="">
-                    Name of user
+                    Test
                 </div>
 
                 <div class="mobileMenu__auth_exit">
@@ -89,7 +87,7 @@
                         <input id="loginPassInput" type="password">
                         <img onclick="togglePasswordInput('loginPassInput')" class="password-icon" src="./assets/hide-eye.svg" alt="">
                     </label>
-                    <button class="small-button" type="submit"><a href="./auth.html">Log in</a></button>
+                    <button onclick="onSendRequest()" class="small-button" type="submit">Log in</button>
 
                     <div class="otherActions">
                         <span onclick="toggleLoginModal();toggleRegisterModal()" class="modalAction">Sign up</span>

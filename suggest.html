@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 	<link rel="stylesheet" href="css/suggest.css">
-	<title>Document</title>
+	<title>Suggested people</title>
 </head>
 
 <body>
@@ -53,10 +53,10 @@
 		<div id="mobileMenu" class="mobileMenu">
 			 <img class="mobileMenu__close" onclick="toggleMenu()" src="./assets/close-icon.svg" alt="close">
 			 <ul class="mobileMenu__list">
-				 <li class="mobileMenu__item active">Main page</li>
-				 <li class="mobileMenu__item">About us</li>
-				 <li class="mobileMenu__item">Testing</li>
-				 <li class="mobileMenu__item">Search</li>
+				<li class="mobileMenu__item"><a href="./index.html">Main page</a></li>
+                <li class="mobileMenu__item"><a href="./index.html">About us</a></li>
+                <li class="mobileMenu__item"><a href="./questions.html">Testing</a></li>
+                <li class="mobileMenu__item active"><a href="./suggest.html">Search</a></li>
 			 </ul>
 			 <div class="mobileMenu__auth">
 				 <div class="mobileMenu__auth_user">
@@ -76,82 +76,82 @@
 		 </div>
  
 		 <div id="loginModal" class="loginModal modal">
-			 <div class="modalWindow">
-				 <img onclick="toggleLoginModal()" class="close-icon" src="./assets/close-icon.svg" alt="close">
-				 <form action="">
-					 <h3 class="modalTitle">
-						 Welcome
-					 </h3>
-					 <label for="">
-						 <span>Email</span>
-						 <input type="text">
-					 </label>
-					 <label for="">
-						 <span>Password</span>
-						 <input type="password">
-						 <img class="password-icon" src="./assets/hide-eye.svg" alt="">
-					 </label>
-					 <button onclick="onSendRequest()" class="small-button" type="submit">Log in</button>
- 
-					 <div class="otherActions">
-						 <span onclick="toggleLoginModal();toggleRegisterModal()" class="modalAction">Sign up</span>
-						 <span onclick="toggleLoginModal();toggleRegisterModal()" class="modalAction">Forgot password?</span>
-					 </div>
-				 </form>
-			 </div>
-		 </div>
- 
-		 <div id="registerModal" class="registerModal modal">
-			 <div class="modalWindow">
-				 <img onclick="toggleRegisterModal()" class="close-icon" src="./assets/close-icon.svg" alt="close">
-				 <form action="">
-					 <h3 class="modalTitle">
-						 Join us
-					 </h3>
-					 <label for="">
-						 <span>First name</span>
-						 <input type="text">
-					 </label>
-					 <label for="">
-						 <span>Last name</span>
-						 <input type="text">
-					 </label>
-					 <label for="">
-						 <span>Email</span>
-						 <input type="text">
-					 </label>
-					 <label for="">
-						 <span>Password</span>
-						 <input type="password">
-						 <img class="password-icon" src="./assets/hide-eye.svg" alt="">
-					 </label>
-					 <label for="">
-						 <span>Repeat password</span>
-						 <input type="password">
-						 <img class="password-icon" src="./assets/hide-eye.svg" alt="">
-					 </label>
-					 <label for="">
-						 <span>Birth Date</span>
-						 <input type="date">
-					 </label>
- 
-					 <label for="profileImage">
-						 <span>Profile picture</span>
-						 <input id="profileImage" type="file">
-						 <div class="customFileInput"></div>
-					 </label>
- 
-					 <label for="">
-						 <span>Country</span>
-						 <select id="countrySelector">
-							 <!-- form JS -->
-						 </select>
-					 </label>
- 
-					 <button onclick="onSendRequest()" class="small-button" type="submit">Sign up</button>
-				 </form>
-			 </div>
-		 </div>
+            <div class="modalWindow">
+                <img onclick="toggleLoginModal()" class="close-icon" src="./assets/close-icon.svg" alt="close">
+                <form action="">
+                    <h3 class="modalTitle">
+                        Welcome
+                    </h3>
+                    <label for="">
+                        <span>Email</span>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <span>Password</span>
+                        <input id="loginPassInput" type="password">
+                        <img onclick="togglePasswordInput('loginPassInput')" class="password-icon" src="./assets/hide-eye.svg" alt="">
+                    </label>
+                    <button onclick="onSendRequest()" class="small-button" type="submit">Log in</button>
+
+                    <div class="otherActions">
+                        <span onclick="toggleLoginModal();toggleRegisterModal()" class="modalAction">Sign up</span>
+                        <span onclick="toggleLoginModal();toggleRegisterModal()" class="modalAction">Forgot password?</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="registerModal" class="registerModal modal">
+            <div class="modalWindow">
+                <img onclick="toggleRegisterModal()" class="close-icon" src="./assets/close-icon.svg" alt="close">
+                <form action="">
+                    <h3 class="modalTitle">
+                        Join us
+                    </h3>
+                    <label for="">
+                        <span>First name</span>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <span>Last name</span>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <span>Email</span>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <span>Password</span>
+                        <input id="registerPassInput" type="password">
+                        <img onclick="togglePasswordInput('registerPassInput')" class="password-icon" src="./assets/hide-eye.svg" alt="">
+                    </label>
+                    <label for="">
+                        <span>Repeat password</span>
+                        <input id="registerRepeatPassInput" type="password">
+                        <img onclick="togglePasswordInput('registerRepeatPassInput')" class="password-icon" src="./assets/hide-eye.svg" alt="">
+                    </label>
+                    <label for="">
+                        <span>Birth Date</span>
+                        <input type="date">
+                    </label>
+
+                    <label for="profileImage">
+                        <span>Profile picture</span>
+                        <input id="profileImage" type="file">
+                        <div class="customFileInput"></div>
+                    </label>
+
+                    <label for="">
+                        <span>Country</span>
+                        <select id="countrySelector">
+                            <!-- form JS -->
+                        </select>
+                    </label>
+
+                    <button onclick="onSendRequest()" class="small-button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
 	 </header>
 	<main>
 		<section class="people">

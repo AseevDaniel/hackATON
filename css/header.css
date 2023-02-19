@@ -88,6 +88,27 @@
     margin-left: 6px;
 }
 
+.header__not_auth .profileImage{
+    width: 50px;
+}
+
+.header__not_auth .userName{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 24px;
+    color: #171717;
+    margin-left: 14px;
+}
+
+.header__not_auth .divider{
+    height: 20px;
+    width: 1px;
+    background: black;
+    margin: 0 12px;
+}
+
 .header__mobile_auth{
     display: none;
 }
@@ -148,6 +169,7 @@
     position: absolute;
     right: 18px;
     bottom: 10px;
+    cursor: pointer;
     /* transform: translateY(50%); */
 }
 
@@ -213,17 +235,24 @@
 
     }
 
-    .mobileMenu__item{
+    .mobileMenu__item {
+        margin-bottom: 8vw;
+        text-align: center;
+    }
+
+    .mobileMenu__item a{
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 600;
         font-size: calc(25px + 2.5vw);
         line-height: 60px;
         color: #171717;
-        margin-bottom: 8vw;
-        text-align: center;
+        
+        
     }
-    .mobileMenu__item.active{
+
+
+    .mobileMenu__item.active a{
         color: #2080C6;
         font-weight: 800;
         text-decoration: underline;
@@ -251,7 +280,7 @@
     }
 
     .mobileMenu__auth_exit{
-        margin-top: 80px;
+        margin-top: 8vw;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 500;
