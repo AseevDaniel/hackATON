@@ -1,3 +1,20 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
 .main .banner { 
     background: #ECECEC;
     display: flex;

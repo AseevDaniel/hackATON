@@ -26,10 +26,10 @@
         <menu class="header__menu">
             <img class="header__logo" src="./assets/logo.svg" alt="logo">
             <ul class="header__menu_list">
-                <li class="header__menu_item active">Main page</li>
-                <li class="header__menu_item">About us</li>
-                <li class="header__menu_item">Testing</li>
-                <li class="header__menu_item">Search</li>
+                <li class="header__menu_item active"><a href="./index.html">Main page</a></li>
+                <li class="header__menu_item"><a href="#ourGoals">About us</a></li>
+                <li class="header__menu_item"><a href="./questions.html">Testing</a></li>
+                <li class="header__menu_item"><a href="./suggest.html">Search</a></li>
             </ul>
         </menu>
         <div onclick="toggleLoginModal()" class="header__auth">
@@ -162,7 +162,7 @@
             <img class="banner__image" src="./assets/main-poster.png" alt="banner">
         </div>
 
-        <div class="serviceGoals">
+        <div id="ourGoals" class="serviceGoals">
             <div class="serviceGoalsWrapper">
                 <h2 class="title">Our goal</h2>
                 <div class="serviceGoals__content">
@@ -191,19 +191,19 @@
                         <h4 class="services__item_title">Events</h4>
                         <img class="services__item_image" src="./assets/services1.png" alt="services1">
                         <p class="services__item_text">Share and participate in events that are about to take place, invite people to enjoy it together.</p>
-                        <button class="services__item_button small-button">View events</button>
+                        <button onclick="toggleLoginModal()" class="services__item_button small-button">View events</button>
                     </li>
                     <li class="services__item">
                         <h4 class="services__item_title">Together</h4>
                         <img class="services__item_image" src="./assets/services2.png" alt="services2">
                         <p class="services__item_text">Register and take the test to find like-minded people, because together everything is easier and way more interesting.</p>
-                        <button class="services__item_button small-button">Registration</button>
+                        <button onclick="toggleLoginModal()" class="services__item_button small-button">Registration</button>
                     </li>
                     <li class="services__item">
                         <h4 class="services__item_title">Search</h4>
                         <img class="services__item_image" src="./assets/services3.png" alt="services3">
                         <p class="services__item_text">Find interesting people and events using our search</p>
-                        <button class="services__item_button small-button">Find what you need</button>
+                        <button onclick="toggleLoginModal()" class="services__item_button small-button">Find what you need</button>
                     </li>
                 </ul>
             </div>

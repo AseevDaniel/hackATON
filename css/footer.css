@@ -1,5 +1,18 @@
+.footer *{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+.footer ul li{
+    list-style: none;
+}
+
 .footer { 
     background: #75B7E7;
+    width: 100vw;
     
 }
 

@@ -1,3 +1,19 @@
+.header *{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+.header ul li{
+    list-style: none;
+}
+
+.header{
+    width: 100vw;
+}
+
 .header .mobileMenu{ 
     display: none;
 }
@@ -32,7 +48,7 @@
     margin-left: min(6vw, 80px)
 }
 
-.header__menu_item { 
+.header__menu_item a { 
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -47,11 +63,11 @@
     margin-right: min(4.5vw, 60px)
 }
 
-.header__menu_item.active, .header__menu_item:hover{
+.header__menu_item.active a, .header__menu_item:hover a{
     color: #2080C6;
 }
 
-.header__menu_item.active{
+.header__menu_item.active a{
     font-weight: 800;
     font-size: 24px;
     text-decoration: underline;
@@ -131,7 +147,7 @@
 .header .modalWindow .password-icon{
     position: absolute;
     right: 18px;
-    bottom: 12px;
+    bottom: 10px;
     /* transform: translateY(50%); */
 }
 
